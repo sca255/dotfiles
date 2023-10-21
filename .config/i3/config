@@ -26,7 +26,7 @@ exec --no-startup-id dex --autostart --environment i3
 #exec_always zsh /home/arp/.config/i3/lock.sh
 exec --no-staatup-id picom
 exec --no-startup-id /home/arp/.config/polybar/launch.sh --shapes
-
+exec_always "xrandr --output HDMI2 --mode 1920x1080"
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id dunst
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so

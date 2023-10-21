@@ -108,3 +108,4 @@ setopt correct_all
 
 neofetch
 z4h load ohmyzsh/ohmyzsh/plugins/{adb,archlinux,cp,emoji,extract,gh,nmap,python,sudo}
+alias vscode /home/arp/Documents/vscode/VSCode-linux-x64/bin/code
