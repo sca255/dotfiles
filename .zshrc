@@ -1,4 +1,4 @@
-# Personal Zsh configuration file. It is strongly recommended to keep all
+#Personal Zsh configuration file. It is strongly recommended to keep all
 # shell customization and configuration (including exported environment
 # variables such as PATH) in this file or in files sourced from it.
 #
@@ -13,11 +13,8 @@ zstyle ':z4h:' auto-update-days '28'
 # Keyboard type: 'mac' or 'pc'.
 zstyle ':z4h:bindkey' keyboard  'pc'
 
-# Start tmux if not already in tmux.
-#zstyle ':z4h:' start-tmux command tmux -u new -A -D -t z4h
-
-# Whether to move prompt to the bottom when zsh starts and on Ctrl+L.
-zstyle ':z4h:' prompt-at-bottom 'no'
+# Don't start tmux.
+zstyle ':z4h:' start-tmux       no
 
 # Mark up shell's output with semantic information.
 zstyle ':z4h:' term-shell-integration 'yes'
@@ -104,8 +101,6 @@ alias ls="${aliases[ls]:-ls} -A"
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
-setopt correct_all
 
 neofetch
-z4h load ohmyzsh/ohmyzsh/plugins/{adb,archlinux,cp,emoji,extract,gh,nmap,python,sudo}
-alias vscode /home/arp/Documents/vscode/VSCode-linux-x64/bin/code
+z4h load ohmyzsh/ohmyzsh/plugins/{adb,archlinux,cp,emoji,extract,nmap,python,sudo,github}
